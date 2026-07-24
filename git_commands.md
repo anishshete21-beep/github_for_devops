@@ -1,3 +1,4 @@
+ Basics:
 git.initit
 git add .
 git status
