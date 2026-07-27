@@ -93,3 +93,37 @@ Think of a tree:
 
 Trunk = main branch
 Branches = Different features or tasks
+
+5.) HOOKS
+Git Hooks are scripts that run automatically when certain Git events happen.
+
+They help automate tasks like testing code, checking formatting, or sending notifications.
+
+| Hook           | When it Runs                     |
+| -------------- | -------------------------------- |
+| **pre-commit** | Before a commit is created.      |
+| **commit-msg** | Checks the commit message.       |
+| **pre-push**   | Before code is pushed to GitHub. |
+| **post-merge** | After a merge is completed.      |
+
+.git
+ └── hooks
+      ├── pre-commit
+      ├── commit-msg
+      ├── post-commit
+      ├── pre-push
+      └── post-merge
+
+Commit
+│
+├── Before → pre-commit
+├── Message → commit-msg
+├── After → post-commit
+
+Push
+│
+└── Before → pre-push
+
+Merge
+│
+└── After → post-merge
