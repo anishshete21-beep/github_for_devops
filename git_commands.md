@@ -68,12 +68,27 @@ Branches = Different features or tasks
 
 A branch is a separate line of development in Git.
 
-git branch                   # Show branches
-git branch feature           # Create a new branch
-git checkout -B feature      # Create a new branch and Switch to It
-git switch feature           # Switch to the branch
-git merge feature            # Merge into current branch
+git branch                 # Show branches
 
+git checkout -b feature    # Create & switch branch
+
+git switch -c feature      # Modern way
+
+git status                 # Check changes
+
+git add .                  # Stage changes
+
+git commit -m "message"    # Save changes
+
+git push origin feature    # Push branch
+
+git pull origin main       # Get latest changes
+
+git checkout main          # Switch branch
+
+git merge feature          # Merge feature into current branch
+
+git branch -d feature      # Delete local branch
 Think of a tree:
 
 Trunk = main branch
