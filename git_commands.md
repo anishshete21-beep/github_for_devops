@@ -47,3 +47,18 @@ If your work is good, ask the teacher to merge it into the original document.
 One-line Interview Answer
 
 A fork is a copy of another user's GitHub repository in your own GitHub account, allowing you to make changes without affecting the original project.
+
+4.)Branches (Git) – Short & Simple
+
+A branch is a separate line of development in Git.
+
+git branch                   # Show branches
+git branch feature           # Create a new branch
+git checkout -B feature      # Create a new branch and Switch to It
+git switch feature           # Switch to the branch
+git merge feature            # Merge into current branch
+
+Think of a tree:
+
+Trunk = main branch
+Branches = Different features or tasks
